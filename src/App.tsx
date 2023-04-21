@@ -1,15 +1,22 @@
-import { useState } from 'react'
-
+//Styles
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./componentes/Navbar";
+import Electrodomesticos from "./componentes/Electrodomesticos";
+import Muebles from "./componentes/Muebles";
 
+const App: React.FC = () => {
   return (
-    <div className="app">
-      <h1>e-Commerce</h1> 
-    </div>
-  )
-}
+    <Router>
+    <NavBar brand={''} />
+    <Routes>
+      <Route path="/electrodomesticos" element={<Electrodomesticos />} />
+      <Route path="/muebles" element={<Muebles />} />
+    </Routes>
+  </Router>
+  );
+};
 
-export default App
+export default App;
+
