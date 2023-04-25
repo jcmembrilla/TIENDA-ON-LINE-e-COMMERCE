@@ -1,12 +1,9 @@
-//Styles
+import { useState } from 'react'
+
 import './App.css'
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NavBar from "./componentes/Navbar";
-import Electrodomesticos from "./componentes/Electrodomesticos";
-import Muebles from "./componentes/Muebles";
-import Home from "./componentes/Home";
-
+function App() {
+  const [count, setCount] = useState(0)
 
 const App: React.FC = () => {
   return (
