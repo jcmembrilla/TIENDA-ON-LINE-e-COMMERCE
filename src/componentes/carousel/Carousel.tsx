@@ -1,13 +1,20 @@
 import React from 'react'
 import CardCarousel from './CardCarousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import imagen1 from '../../img/electrodomesticos.png'
+import imagen2 from '../../img/dormitorio.png'
+import imagen3 from '../../img/jardineria.png'
+
 
 const elementos =[{
-        title : "Electrodomesticos"
+        title : "Electrodomesticos",
+        img:imagen1
     },{
-        title : "Dormitorios"
+        title : "Dormitorios",
+        img:imagen2
     },{
-        title : "Jardineria"
+        title : "Jardineria",
+        img:imagen3
     }
 ]
 
@@ -16,14 +23,17 @@ const Carousel = () => {
   return (  
     <div id="carouselExampleAutoplaying" className="carousel slide w-100 mx-auto" data-bs-ride="carousel">
       <div className="carousel-inner text-center d-flex align-items-center" style={{ width: "100%", height: "300px" }}>
-        <div className="carousel-item active h-50 border border-5">
+        <div className="carousel-item active h-50  ">
           <CardCarousel title={elementos[0].title}/>
+          <img src={imagen1} alt="" />
         </div>
-        <div className="carousel-item h-50 border border-5 ">
+        <div className="carousel-item h-50  ">
           <CardCarousel title={elementos[1].title}/>
+          <img src={imagen2} alt="" />
         </div>
-        <div className="carousel-item h-50 border border-5 " >
+        <div className="carousel-item h-50  " >
           <CardCarousel title={elementos[2].title}/>
+          <img src={imagen3} alt="" />
         </div>
       </div>
 

@@ -5,8 +5,8 @@ import './cardCarousel.css';
 
 function CardCarousel(props) {
   return (
-    <div className=" d-inline-flex p-4">
-      <h2 className="tituloOffer p-5 text-center fs-1">{props.title}</h2> 
+    <div className=" d-inline-flex align-items-center p-4">
+      <h2 className="tituloOffer p-0 m-0 text-center fs-1">{props.title}</h2>
     </div>
   )
 }
