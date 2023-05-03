@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
+
 interface NavBarProps {
   brand: string;
 }

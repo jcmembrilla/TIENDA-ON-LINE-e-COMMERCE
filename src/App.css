@@ -1,5 +1,5 @@
 body{
-  background-color: brown;
+  background-color: rgb(28, 28, 28);
 }
 
 .app{
@@ -8,4 +8,50 @@ body{
 
 .card{
   width: 18rem
+}
+
+.container_combos{
+  height:fit-content;
+  width: 80% !important;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel1{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.grilla{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.item{
+  height: 250px;
+  width: 250px;
+}
+.panel2{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.grilla2{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

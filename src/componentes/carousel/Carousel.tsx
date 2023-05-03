@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import imagen1 from '../../img/electrodomesticos.png'
 import imagen2 from '../../img/dormitorio.png'
 import imagen3 from '../../img/jardineria.png'
+import 'animate.css';
 
 
 const elementos =[{
@@ -23,17 +24,17 @@ const Carousel = () => {
   return (  
     <div id="carouselExampleAutoplaying" className="carousel slide w-100 mx-auto" data-bs-ride="carousel">
       <div className="carousel-inner text-center d-flex align-items-center" style={{ width: "100%", height: "300px" }}>
-        <div className="carousel-item active h-50  ">
+        <div className="carousel-item active h-50">
           <CardCarousel title={elementos[0].title}/>
-          <img src={imagen1} alt="" />
+          <img src={imagen1} className='img_car animate__animated animate__backInUp' alt="" />
         </div>
-        <div className="carousel-item h-50  ">
+        <div className="carousel-item h-50">
           <CardCarousel title={elementos[1].title}/>
-          <img src={imagen2} alt="" />
+          <img src={imagen2} className='img_car animate__animated animate__backInUp' alt="" />
         </div>
-        <div className="carousel-item h-50  " >
+        <div className="carousel-item h-50" >
           <CardCarousel title={elementos[2].title}/>
-          <img src={imagen3} alt="" />
+          <img src={imagen3} className='img_car animate__animated animate__backInUp' alt="" />
         </div>
       </div>
 
