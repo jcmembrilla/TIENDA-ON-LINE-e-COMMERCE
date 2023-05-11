@@ -1,13 +1,18 @@
-
+//Styles
 import './App.css'
+//Components
 import Home from './componentes/Home';
 import Muebles from './componentes/Muebles';
 import Electrodomesticos from './componentes/Electrodomesticos';
+import NoMatch from './componentes/NoMatch';
+//Dependencis
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NavBar from './componentes/Navbar';
-import NoMatch from './componentes/NoMatch';
 
 
+
+
+function App() {
 const App: React.FC = () => {
   return (
     <Router>
