@@ -1,5 +1,10 @@
+import ComboInterior from "./ComboInterior";
+
 const Home: React.FC = () => {
-    return <h1>Home</h1>;
+    return (<div>
+      <ComboInterior />
+    </div>)
   };
   
   export default Home;
+  
