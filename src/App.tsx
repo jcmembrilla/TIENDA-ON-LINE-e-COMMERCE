@@ -10,9 +10,6 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NavBar from './componentes/Navbar';
 
 
-
-
-function App() {
 const App: React.FC = () => {
   return (
     <Router>
