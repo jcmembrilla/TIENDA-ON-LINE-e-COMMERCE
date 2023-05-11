@@ -1,5 +1,8 @@
-import { Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
+import Image from 'react-bootstrap/Image';
+import Logo from '../assets/shopIcon.png'
+import '../App.css'
 
 interface NavBarProps {
   brand: string;
@@ -7,20 +10,23 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ brand }) => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" className="transparent-navbar">
       <Navbar.Brand href="#home">{brand}</Navbar.Brand>
+        <Nav.Link as={NavLink} to="/" className="nav-link-logo">
+          <Image src={Logo} alt="ShopImg" className="logo" />
+        </Nav.Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">
+        <Nav className="ml-auto">
+          <NavLink to="/" className="nav-link" activeClassName="active">
             Home
-          </Nav.Link>
-          <Nav.Link as={Link} to="/electrodomesticos">
+          </NavLink>
+          <NavLink to="/electrodomesticos" className="nav-link" activeClassName="active">
             Electrodomésticos
-          </Nav.Link>
-          <Nav.Link as={Link} to="/muebles">
+          </NavLink>
+          <NavLink to="/muebles" className="nav-link" activeClassName="active">
             Muebles
-          </Nav.Link>
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -28,3 +34,4 @@ const NavBar: React.FC<NavBarProps> = ({ brand }) => {
 };
 
 export default NavBar;
+
