@@ -23,7 +23,7 @@ const elementos =[{
 const Carousel = () => {
   return (  
     <div id="carouselExampleAutoplaying" className="carousel slide w-100 mx-auto" data-bs-ride="carousel">
-      <div className="carousel-inner text-center d-flex align-items-center" style={{ width: "100%", height: "300px" }}>
+      <div className="carousel-inner text-center d-flex align-items-center bg-warning" style={{ width: "100%", height: "300px" }}>
         <div className="carousel-item active h-50">
           <CardCarousel title={elementos[0].title}/>
           <img src={imagen1} className='img_car animate__animated animate__backInUp' alt="" />

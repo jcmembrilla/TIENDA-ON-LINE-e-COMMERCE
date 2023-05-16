@@ -85,6 +85,24 @@ const ComboInterior: React.FC = () => {
                             </div>
                           </div>
                     </div>
+                    <div className="col-sm-6">
+                        <div className="cards panel card" >
+                            <img className="card-img-top" src={elementosInterior[0].imgRecreacion} alt="Card image cap"></img>
+                            <div className="card-body">
+                              <h5 className="card-title text-center">Recreacion</h5>
+                              <a href="#" className="btn btn-warning btn-lg btn-block">Combo!</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div className="col-sm-6">
+                        <div className="cards panel card" >
+                            <img className="card-img-top" src={elementosInterior[0].imgRecreacion} alt="Card image cap"></img>
+                            <div className="card-body">
+                              <h5 className="card-title text-center">Recreacion</h5>
+                              <a href="#" className="btn btn-warning btn-lg btn-block">Combo!</a>
+                            </div>
+                          </div>
+                    </div>
              </div>
         </section>
         </div>
