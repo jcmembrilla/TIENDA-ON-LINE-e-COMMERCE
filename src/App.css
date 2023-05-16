@@ -1,6 +1,6 @@
 body{
-  background-color: rgb(40, 38, 44);
-  color: #fff;
+  background-color: white;
+  color: white
 }
 
 .row{
@@ -9,7 +9,7 @@ body{
  }
 
 .pocket{
-  background-color: rgb(36, 33, 26);
+  background-color: rgb(240, 170, 9);
  width: 40%;
 }
 
@@ -47,7 +47,7 @@ body{
 }
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: #000000;
   font-weight: bold;
   margin-right: 10px;
   text-decoration: none;
@@ -55,7 +55,7 @@ body{
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #4a4a4a;
+  color: orangered;
   background-color: #fff;
   border-radius: 4px;
 }

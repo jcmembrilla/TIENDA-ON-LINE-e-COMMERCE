@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image';
 import Logo from '../assets/shopIcon.png'
 import '../App.css'
 
+
 interface NavBarProps {
   brand: string;
 }
