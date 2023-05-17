@@ -1,53 +1,58 @@
-body{
-  background-color: rgb(40, 38, 44);
-  color: #fff;
+/* Estilos generales */
+
+body {
+  background-color: white;
+  color: white;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: space-evenly;
- }
-
-.pocket{
-  background-color: rgb(36, 33, 26);
- width: 40%;
 }
 
-.cards{
-  background-color: rgb(145, 110, 24);
-  text-align: center
+.pocket {
+  background-color: rgba(36, 33, 26, 0.9);
+  width: 40%;
 }
 
-.app{
+.cards {
+  background-color: orangered;
+  text-align: center;
+}
+
+.app {
   text-align: center;
 }
 
 .logo {
   height: 6em;
   padding: 1.5em;
- 
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #2d94b1aa);
+  filter: drop-shadow(0 0 1em #2d94b1aa);
 }
 
-.NameShop {
-  color: #fff;
-  font-weight: bold;
-
-}
-.name-logo{
+.name-logo {
   text-align: center;
 }
 
 .navbar {
-  background-color: transparent !important; /* !important para anular estilos predeterminados de react-bootstrap */
+  background-color: rgba(0, 0, 0, 0.5) !important;
   box-shadow: none !important;
 }
 
+/*logo Carrito */
+
+.carrito {
+  height: 6em;
+  padding: 1.5em;
+}
+
+/* Navbar */
+
 .navbar-nav .nav-link {
-  color: #fff;
+  color: white;
   font-weight: bold;
   margin-right: 10px;
   text-decoration: none;
@@ -56,6 +61,118 @@ body{
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: #4a4a4a;
-  background-color: #fff;
+  background-color: orangered;
   border-radius: 4px;
+}
+
+/* Barra de búsqueda responsive */
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('./assets/dark-lupa.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+
+/* Estilos responsive */
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas de hasta 768px de ancho */
+  
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+  
+  .carrito {
+    height: 4em;
+    padding: 1em;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 5px;
+  }
+  
+  .search-icon {
+    right: 5px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Estilos para pantallas de hasta 480px de ancho */
+  
+  .logo {
+    height: 3em;
+    padding: 0.5em;
+  }
+  
+  .carrito {
+    height: 3em;
+    padding: 0.5em;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 2px;
+  }
+  
+  .search-icon {
+    right: 2px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2em 0;
+}
+
+.footer h5 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #4a4a4a;
+}
+
+.footer address {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: rgba(36, 33, 26, 0.9);
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+.footer-bottom p {
+  color: #fff;
+  margin: 0;
 }
