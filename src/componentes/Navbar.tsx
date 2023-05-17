@@ -7,6 +7,7 @@ import Carrito from "../assets/carrito.png";
 
 import "../App.css";
 
+
 interface NavBarProps {
   brand: string;
 }

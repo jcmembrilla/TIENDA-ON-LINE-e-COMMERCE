@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 
 body {
@@ -60,8 +61,8 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #4a4a4a;
-  background-color: orangered;
+  color: orangered;
+  background-color: #fff;
   border-radius: 4px;
 }
 
