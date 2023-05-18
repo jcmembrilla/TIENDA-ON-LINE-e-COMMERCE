@@ -10,3 +10,7 @@
 .img_car{
    filter:drop-shadow(3px 3px 9px #888)
 }
+
+.oferta{
+   filter:drop-shadow(3px 3px 9px #000000)
+}
