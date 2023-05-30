@@ -3,7 +3,6 @@
 
 body {
   background-color: white;
-  color: white;
 }
 
 .row {
@@ -12,14 +11,12 @@ body {
 }
 
 .pocket {
-  background-color: rgba(36, 33, 26, 0.9);
+  background-color: rgba(243, 242, 239, 0.9);
   width: 40%;
+  filter:drop-shadow(3px 3px 9px #888)
 }
 
-.cards {
-  background-color: orangered;
-  text-align: center;
-}
+
 
 .app {
   text-align: center;
@@ -39,7 +36,7 @@ body {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.24) !important;
   box-shadow: none !important;
 }
 
