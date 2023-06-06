@@ -8,7 +8,7 @@ import Tecnologia from './componentes/Tecnologia';
 import NoMatch from './componentes/NoMatch';
 import NavBar from './componentes/Navbar';
 import Footer from './componentes/Footer';
-import Combo from "./componentes/Combo";
+import Combo from "./componentes/Combo/Combo";
 
 //Styles
 import './App.css'
