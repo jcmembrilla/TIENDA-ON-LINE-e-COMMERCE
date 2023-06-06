@@ -1,13 +1,17 @@
-import ComboInterior from "./ComboInterior";
 import Carousel from './carousel/Carousel';
+<<<<<<< HEAD
 import FormCombo from "./Combo/FormCombo";
+=======
+import CardHome from "./CardHome";
+>>>>>>> master
 
 const Home: React.FC = () => {
-    return (<div>
+    return (
+    <>
       <Carousel/>
-      <ComboInterior />
-      <FormCombo/>
-    </div>)
+      <CardHome />
+    </>
+    )
   };
   
   export default Home;

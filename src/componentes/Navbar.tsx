@@ -15,9 +15,9 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ brand }) => {
   return (
     <Navbar expand="md" className="d-flex align-items-center justify-content-center">
-      <Nav.Link as={NavLink} to="/" className="nav-link-logo ">
+      <NavLink to="/" className="nav-link-logo ">
           <Image src={Logo} alt="ShopImg" className="logo" />
-      </Nav.Link>
+      </NavLink>
           <div className="d-flex align-items-center">
             <Image src={Carrito} alt="Carrito" className="carrito" />
             <div className="search-wrapper ">
