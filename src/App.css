@@ -5,22 +5,7 @@ body {
   background-color: white;
 }
 
-.row {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.pocket {
-  background-color: rgba(243, 242, 239, 0.9);
-  width: 40%;
-  filter:drop-shadow(3px 3px 9px #888)
-}
-
-
-
-.app {
-  text-align: center;
-}
+/* Navbar */
 
 .logo {
   height: 6em;
@@ -46,8 +31,6 @@ body {
   height: 6em;
   padding: 1.5em;
 }
-
-/* Navbar */
 
 .navbar-nav .nav-link {
   color: white;
@@ -80,58 +63,6 @@ body {
   background-size: cover;
   cursor: pointer;
 }
-
-
-/* Estilos responsive */
-
-@media (max-width: 768px) {
-  /* Estilos para pantallas de hasta 768px de ancho */
-  
-  .logo {
-    height: 4em;
-    padding: 1em;
-  }
-  
-  .carrito {
-    height: 4em;
-    padding: 1em;
-  }
-  
-  .navbar-nav .nav-link {
-    margin-right: 5px;
-  }
-  
-  .search-icon {
-    right: 5px;
-    width: 12px;
-    height: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Estilos para pantallas de hasta 480px de ancho */
-  
-  .logo {
-    height: 3em;
-    padding: 0.5em;
-  }
-  
-  .carrito {
-    height: 3em;
-    padding: 0.5em;
-  }
-  
-  .navbar-nav .nav-link {
-    margin-right: 2px;
-  }
-  
-  .search-icon {
-    right: 2px;
-    width: 10px;
-    height: 10px;
-  }
-}
-
 
 /* Footer */
 
