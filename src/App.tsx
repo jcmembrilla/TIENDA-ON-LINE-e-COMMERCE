@@ -3,8 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 //Components
 import Home from './componentes/Home';
-import Muebles from './componentes/Muebles';
-import Tecnologia from './componentes/Tecnologia';
+import Categoryes from './componentes/ShowCategoryes';
 import NoMatch from './componentes/NoMatch';
 import NavBar from './componentes/Navbar';
 import Footer from './componentes/Footer';
@@ -21,8 +20,8 @@ const App: React.FC = () => {
     <NavBar brand={''} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tecnologia" element={<Tecnologia />} />
-        <Route path="/muebles" element={<Muebles />} />
+        <Route path="/tecnologia" element={<Categoryes category="electronics"/>} />
+        <Route path="/muebles" element={<Categoryes category="jewelery"/>} />
         <Route path="/combo" element={<Combo />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>

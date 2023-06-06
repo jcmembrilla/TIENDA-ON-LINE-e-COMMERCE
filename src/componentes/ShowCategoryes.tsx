@@ -5,7 +5,7 @@ const Card = ({ data }) => {
   return (
     <Col>
       <div className="card shadow-sm">
-        <img src={data.image} alt={data.title} className="bd-placeholder-img card-img-top"  style={{ width: '100%', height: '225px'}}/>
+        <img src={data.image} alt="Thumbnail" className="bd-placeholder-img card-img-top"  style={{ width: '100%', height: '225px', objectFit: 'cover' }}/>
         <div className="card-body">
           <h5 className="card-title">{data.title}</h5>
           <p className="card-text">{data.description}</p>
@@ -15,24 +15,28 @@ const Card = ({ data }) => {
   );
 };
 
-const Muebles: React.FC = () => {
+interface TecnologiaProps {
+  category: string;
+}
+
+const Categories: React.FC = ({category}) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products/category/jewelery')
+    fetch(`https://fakestoreapi.com/products/category/${category}`)
       .then(response => response.json())
       .then(data => setCards(data))
       .catch(error => console.log(error));
-  }, []);
+  }, [category]);
 
   return (
     <>
       <section className="py-5 text-center container">
         <Row className="py-lg-5">
           <Col lg={6} md={8} className="mx-auto">
-            <h1 className="fw-light text-dark">Muebles</h1>
+            <h1 className="fw-light text-dark">Tecnologic</h1>
             <p className="lead text-muted">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi eligendi illo aliquam nisi quia repellendus fuga odio beatae accusantium, quidem hic inventore ducimus, quibusdam ullam corrupti cum earum, obcaecati consequuntur?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum corporis inventore eaque delectus eligendi voluptatem sunt vel repudiandae esse ratione a, rerum quidem est harum iure temporibus laboriosam ducimus facilis!
             </p>
           </Col>
         </Row>
@@ -50,4 +54,5 @@ const Muebles: React.FC = () => {
   );
 };
 
-export default Muebles;
+export default Categories;
+
