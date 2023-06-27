@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 import imagenCocina from "../img/combo-img/cocina.jpg"
-import imagenDormitorio from "../img/combo-img/cocina.jpg"
+import imagenDormitorio from "../img/combo-img/habitacion.jpg"
 import imagenOficina from "../img/combo-img/oficina.jpg"
 import imagenLiving from "../img/combo-img/living.jpg"
 import imagenRecreacion from "../img/combo-img/recreacion.jpg"
