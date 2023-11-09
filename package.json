@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "front-react",
   "private": true,
   "version": "0.0.0",
@@ -28,3 +29,28 @@
     "vite": "^4.2.0"
   }
 }
+=======
+  "name": "tienda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "node apps/api/dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.16"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
+
+>>>>>>> a22698f (COnfigurando mono repo)
