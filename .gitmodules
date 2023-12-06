@@ -1,0 +1,7 @@
+[submodule "apps/api"]
+  path = apps/api
+  url = https://github.com/j1-cruz/TIENDA-ON-LINE-e-COMMERCE.git/apps/api
+
+[submodule "apps/client"]
+  path = apps/client
+  url = https://github.com/j1-cruz/TIENDA-ON-LINE-e-COMMERCE.git/apps/client
